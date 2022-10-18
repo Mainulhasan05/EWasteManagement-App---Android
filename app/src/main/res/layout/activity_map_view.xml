@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MapView">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map View"
+        android:textAlignment="center"
+        android:textSize="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+
+    <androidx.fragment.app.FragmentContainerView xmlns:tomtom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map_fragment"
+        android:name="com.tomtom.sdk.maps.display.ui.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tomtom:mapKey="uW8vKA3Z6tWbc8RptkUb4ix7AFWSvE2M" />
+</LinearLayout>

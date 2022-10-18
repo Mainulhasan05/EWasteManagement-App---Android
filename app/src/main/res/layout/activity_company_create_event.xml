@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:padding="@dimen/_24sdp"
+    tools:context=".CompanyCreateEventActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Welcome Back"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Event"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/inputEventName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:hint="Event Name"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <!--        job starts here-->
+        <EditText
+            android:id="@+id/inputEventPlace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Event Place"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+        <!--        job ends here-->
+
+        <!--      phone starts  -->
+        <EditText
+            android:id="@+id/inputEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Event Date"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <!--phone ends-->
+
+        <!--        present address starts-->
+        <EditText
+            android:id="@+id/inputEventTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Event Time"
+            android:importantForAutofill="no"
+            android:inputType="time"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <EditText
+            android:id="@+id/inputEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Event Time"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:lines="3"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+        <!--        present address ends-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/eventSaveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:textColor="@color/white"
+
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:text="SAVE"
+            app:cornerRadius="@dimen/_8sdp"
+            />
+            <ProgressBar
+                android:id="@+id/eventProgressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:padding="@dimen/_15sdp"
+    tools:context=".CreatePostActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What kind of waste you have?"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/primary_dark"
+        android:layout_marginBottom="@dimen/_15sdp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_marginBottom="@dimen/_10sdp"
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer"/>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Television" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Phones"/>
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Printer"/>
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/uploadPostImageBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Upload Image"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+
+    <ImageView
+        android:id="@+id/wasteImage"
+        android:layout_width="91dp"
+        android:layout_height="@dimen/_80sdp"
+        android:padding="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want my waste as"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp"
+        />
+    <Spinner
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/rewardspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Pickup Date:"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/primary_dark"
+        />
+    <DatePicker
+
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Pickup Time:"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/_15sdp"
+        />
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your address:"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/primary_dark"
+        />
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="House No, Road No, Area"
+        android:lines="2"
+        />
+    <EditText
+        android:id="@+id/noteET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Any notes regarding your waste?"
+        android:lines="3"
+        />
+    <Button
+        android:id="@+id/postsaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+
+        />
+</LinearLayout>
+</ScrollView>
